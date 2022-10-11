@@ -13,8 +13,7 @@
     </bean>
 
     <bean id="messagesendservice" class="com.nhnacademy.edu.springframework.messagesender.service.MessageSendService">
-        <constructor-arg ref="email"/>
-        <constructor-arg ref="sms"/>
+        <property name="messageSender" ref="sms"/>
     </bean>
 
 
