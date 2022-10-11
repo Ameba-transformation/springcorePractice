@@ -10,14 +10,14 @@ public class MessageSendService {
 
     }
 
-    public void setMessageSender(MessageSender messageSender) {
+    public void setSms(MessageSender messageSender) {
         System.out.println("setMessageSend!!!!");
         this.messageSender = messageSender;
     }
 
-    public MessageSendService(MessageSender messageSender) {
-        this.messageSender = messageSender;
-    }
+//    public MessageSendService(MessageSender messageSender) {
+//        this.messageSender = messageSender;
+//    }
 
     public void doSendMessage(){
         messageSender.sendMessage(new User("abcde", "010-1234-5678"),"hello");
